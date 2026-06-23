@@ -17,7 +17,7 @@ live in your browser.
 > SPA — streaming, traceable, and provider-agnostic.
 
 <p align="center">
-  <img src="docs/assets/screenshots/timeline.png" alt="HelmAgents live streaming timeline" width="100%">
+  <img src="docs/assets/screenshots/timeline-en.png" alt="HelmAgents live streaming timeline" width="100%">
   <br><sub>Live streaming timeline — all 13 agents complete one by one, bull/bear and risk debates rendered live in the browser</sub>
 </p>
 
@@ -89,7 +89,7 @@ analysis:
 5. **Portfolio Manager** — synthesizes everything into the final decision.
 
 <p align="center">
-  <img src="docs/assets/screenshots/decision.png" alt="Final trade decision" width="100%">
+  <img src="docs/assets/screenshots/decision-en.png" alt="Final trade decision" width="100%">
   <br><sub>The Portfolio Manager's final call — 5-tier rating, entry/stop, horizon, and full reasoning</sub>
 </p>
 
@@ -191,7 +191,7 @@ Open `http://localhost:5170/en`, go to **/analyze**, configure a run, and press
 **Run analysis**.
 
 <p align="center">
-  <img src="docs/assets/screenshots/analyze.png" alt="Run an analysis" width="100%">
+  <img src="docs/assets/screenshots/analyze-en.png" alt="Run an analysis" width="100%">
   <br><sub>Run an analysis — enter a ticker and trade date, pick analysts, and stream the pipeline with one click</sub>
 </p>
 
@@ -215,7 +215,7 @@ separately — point the SPA at the API with `VITE_API_BASE_URL` and allow its
 origin via `CORS_ORIGIN` (see [`.env.example`](.env.example)).
 
 <p align="center">
-  <img src="docs/assets/screenshots/settings.png" alt="Model & key settings" width="100%">
+  <img src="docs/assets/screenshots/settings-en.png" alt="Model & key settings" width="100%">
   <br><sub>Bring your own model — pick from 20+ providers, set deep / fast models separately, keys encrypted at rest</sub>
 </p>
 
