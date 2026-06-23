@@ -1,6 +1,6 @@
 # HelmAgents
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Français](README.fr.md) · **[Deutsch](README.de.md)** · [Español](README.es.md) · [Tiếng Việt](README.vi.md)
+[简体中文](README.md) · [English](README.en.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Français](README.fr.md) · **[Deutsch](README.de.md)** · [Español](README.es.md) · [Tiếng Việt](README.vi.md)
 
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A522-green.svg)](package.json)
