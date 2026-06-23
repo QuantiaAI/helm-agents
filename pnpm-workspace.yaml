@@ -1,0 +1,9 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  '@swc/core': true
+  better-sqlite3: false
+  esbuild: true
+  msw: true
+  sharp: true

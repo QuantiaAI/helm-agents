@@ -1,0 +1,40 @@
+{
+  "name": "tradingagents-web",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.5.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:clean": "bash scripts/dev-clean.sh",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "license": "Apache-2.0",
+  "description": "Multi-agent LLM trading desk — thirteen AI analysts converge on one traceable trade decision. An independent TypeScript project (NestJS API + React/Vite SPA) inspired by TradingAgents.",
+  "author": "the HelmAgents authors",
+  "keywords": [
+    "llm",
+    "multi-agent",
+    "trading",
+    "finance",
+    "langgraph",
+    "nestjs",
+    "react",
+    "vite",
+    "typescript",
+    "ai",
+    "investment",
+    "agents"
+  ]
+}

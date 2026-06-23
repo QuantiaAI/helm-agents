@@ -1,0 +1,26 @@
+HelmAgents
+Copyright 2026 the HelmAgents authors
+
+HelmAgents is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+----------------------------------------------------------------------
+
+Acknowledgement
+
+HelmAgents is an independent project. It does NOT include, copy, or port any
+source code from other projects — it is written from scratch in TypeScript
+(NestJS API + React/Vite SPA). It was inspired by the multi-agent
+trading-decision design of:
+
+  TradingAgents — Multi-Agent LLM Financial Trading Decision Framework
+  https://github.com/TauricResearch/TradingAgents
+  Copyright (c) Tauric Research. Licensed under the Apache License, Version 2.0.
+
+This acknowledgement is offered out of respect for that prior work. It does not
+imply any affiliation with, or endorsement by, Tauric Research.
+
+Trademarks: "Binance", "OKX", and "Gate" are trademarks of their respective
+owners and are mentioned here for descriptive purposes only. This project is
+not affiliated with, endorsed by, or sponsored by any of these exchanges or by
+Tauric Research. "HelmAgents" is a project name and is not claimed as a
+registered trademark.

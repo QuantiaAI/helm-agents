@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "dev": "nest start --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "@helm-agents/config": "workspace:*",
+    "@helm-agents/contracts": "workspace:*",
+    "@helm-agents/core": "workspace:*",
+    "@helm-agents/dataflows": "workspace:*",
+    "@helm-agents/llm": "workspace:*",
+    "@helm-agents/persistence": "workspace:*",
+    "@helm-agents/shared": "workspace:*",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
+    "@swc/core": "^1.7.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^6.0.0",
+    "supertest": "^7.0.0",
+    "typescript": "^5.6.0",
+    "unplugin-swc": "^1.5.0",
+    "vitest": "^2.1.0"
+  },
+  "license": "Apache-2.0"
+}

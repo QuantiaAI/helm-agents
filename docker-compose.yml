@@ -1,0 +1,45 @@
+# HelmAgents — one-command self-host.
+#   docker compose up --build      # then open http://localhost:8080
+#
+# Configure your LLM after startup on the Settings page (keys are encrypted at
+# rest), or uncomment a provider key below. Set DEMO_LLM=1 to try with no key.
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      - API_PORT=5171
+      # - OPENAI_API_KEY=sk-...
+      # - TRADINGAGENTS_LLM_PROVIDER=openai
+      # - DEMO_LLM=1
+    volumes:
+      # Persist runs, memory, settings, and the encrypted API keys.
+      - helmagents-store:/root/.tradingagents-web
+    expose:
+      - "5171"
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://localhost:5171/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  helmagents-store:

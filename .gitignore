@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# build outputs
+.next/
+.turbo/
+dist/
+build/
+out/
+coverage/
+
+# logs
+*.log
+npm-debug.log*
+
+# env / secrets
+.env
+.env.local
+.env.*.local
+
+# local data (sqlite db, cache, runtime artifacts)
+*.db
+*.db-journal
+.tradingagents-web/
+
+# os
+.DS_Store
+*.tsbuildinfo

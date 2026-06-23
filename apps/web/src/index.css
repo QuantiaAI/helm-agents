@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+  /* Ambient cyan glow, anchored to the viewport so it reads as environment
+     light rather than a page-positioned blob (design system · hero/landing). */
+  background-image: radial-gradient(
+    1000px 480px at 80% -8%,
+    rgba(45, 226, 230, 0.08),
+    transparent 62%
+  );
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(45, 226, 230, 0.3);
+  color: #ffffff;
+}
+
+/* Terminal-style scrollbars (design system · #222C3B thumb on #0A0E14). */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222c3b transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222c3b;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* highlight.js dark token theme for rehype-highlight code blocks (compact).
+   Strings shifted to the brand cyan for cohesion with the design system. */
+.hljs-comment,
+.hljs-quote {
+  color: #5a6678;
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-type {
+  color: #c084fc;
+}
+.hljs-string,
+.hljs-attr,
+.hljs-template-tag {
+  color: #2de2e6;
+}
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet {
+  color: #fbbf24;
+}
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-attribute {
+  color: #60a5fa;
+}
+.hljs-built_in {
+  color: #22d3ee;
+}
+.hljs-meta,
+.hljs-deletion {
+  color: #f87171;
+}
+.hljs-addition {
+  color: #00d68f;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 700;
+}
