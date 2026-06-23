@@ -286,6 +286,15 @@ importers:
         specifier: ^2.1.0
         version: 2.1.9(@types/node@22.19.21)(jsdom@25.0.1)(msw@2.14.6(@types/node@22.19.21)(typescript@5.9.3))(terser@5.48.0)
 
+  packages/install-contract:
+    devDependencies:
+      typescript:
+        specifier: ^5.6.0
+        version: 5.9.3
+      vitest:
+        specifier: ^2.1.0
+        version: 2.1.9(@types/node@22.19.21)(jsdom@25.0.1)(msw@2.14.6(@types/node@22.19.21)(typescript@5.9.3))(terser@5.48.0)
+
   packages/llm:
     dependencies:
       '@anthropic-ai/sdk':
